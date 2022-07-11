@@ -5,6 +5,7 @@ import { createDrawerNavigator } from "@react-navigation/drawer";
 import HomeScreen from "./screens/HomeScreen";
 import CustomDrawer from "./components/CustomDrawer";
 import { Ionicons } from "@expo/vector-icons";
+import { AntDesign } from "@expo/vector-icons";
 import AboutScreen from "./screens/AboutScreen";
 
 const Drawer = createDrawerNavigator();
@@ -36,11 +37,11 @@ function MyDrawer() {
                 }}
             />
             <Drawer.Screen
-                name="About"
+                name="About Me"
                 component={AboutScreen}
                 options={{
                     drawerIcon: ({ color }) => (
-                        <Ionicons name="home-outline" size={22} color={color} />
+                        <AntDesign name="user" size={22} color={color} />
                     ),
                 }}
             />
